@@ -17,31 +17,10 @@ module.exports = {
           '^/uac': '/uac'
         }
       },
-      '/mdc': {
-        target: 'http://dev-api.paascloud.net:7979/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/mdc': '/mdc'
-        }
-      },
-      '/omc': {
-        target: 'http://dev-api.paascloud.net:7979/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/omc': '/omc'
-        }
-      },
-      '/zuul': {
-        target: 'http://dev-api.paascloud.net:7979/',
-        changeOrigin: true,
-        pathRewrite: {
-          '^/zuul': '/zuul'
-        }
-      }
     },
 
     // Various Dev Server settings
-    host: 'dev-admin.paascloud.net', // can be overwritten by process.env.HOST
+    host: 'dev-login.paascloud.net', // can be overwritten by process.env.HOST
     port: 80, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,
