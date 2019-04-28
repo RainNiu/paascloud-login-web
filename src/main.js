@@ -16,14 +16,76 @@ import { enums, PcCookie, PcLockr, PcEncrypt } from 'utils/';
 import 'element-ui/lib/theme-chalk/index.css';
 import './style.less';
 import {
+  Table,
+  TableColumn,
+  Row,
+  Col,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  Input,
+  Select,
+  Option,
+  Button,
+  Menu,
+  Submenu,
+  MenuItem,
+  MenuItemGroup,
+  Breadcrumb,
+  BreadcrumbItem,
   Dialog,
+  Pagination,
+  Form,
+  FormItem,
   MessageBox,
   Message,
-  Loading
+  Loading,
+  Checkbox,
+  CheckboxGroup,
+  Radio,
+  Upload,
+  Tree,
+  Tabs,
+  TabPane,
+  Tooltip,
+  Transfer,
+  Cascader,
+  DatePicker
 } from 'element-ui';
 
 const components = [
-  Dialog
+  Table,
+  TableColumn,
+  Row,
+  Col,
+  Dropdown,
+  DropdownMenu,
+  DropdownItem,
+  Input,
+  Select,
+  Option,
+  Button,
+  Menu,
+  Submenu,
+  MenuItem,
+  MenuItemGroup,
+  Breadcrumb,
+  BreadcrumbItem,
+  Dialog,
+  Pagination,
+  Form,
+  FormItem,
+  Checkbox,
+  CheckboxGroup,
+  Radio,
+  Upload,
+  Tree,
+  Tabs,
+  TabPane,
+  Tooltip,
+  Transfer,
+  Cascader,
+  DatePicker
 ];
 components.map(component => {
   Vue.component(component.name, component);
@@ -40,7 +102,6 @@ Vue.prototype.$pcEnum = enums;
 Vue.prototype.$pcEncrypt = PcEncrypt;
 Vue.prototype.$pcLockr = PcLockr;
 Vue.prototype.$pcCookie = PcCookie;
-
 Vue.prototype.$http = axios.create({
   timeout: 60000
 });
